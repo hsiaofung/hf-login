@@ -1,3 +1,19 @@
+/*Reset satrt*/
+.login button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding: 0px 0px;
+}
+/*Reset end*/
+.login {
+  letter-spacing: 0.1em;
+  line-height: 1.5rem;
+  font-size: 14px;
+  font-family: "Lato", 微軟雅黑體, "Microsoft JhengHei", 微軟正黑體, Arial,
+    sans-serif;
+  color: #1a1a1a;
+}
 #login-iframe {
   width: 100%;
   height: 100%;
@@ -17,14 +33,46 @@
 }
 .login-wrap .lightbox .lightbox-content .lightbox-close-btn {
   filter: invert(1);
-  opacity: 0.6;
-}
-.login-wrap .lightbox .lightbox-content .lightbox-close-btn:hover {
-  opacity: 1;
+  top: 18px;
 }
 
-.bodyTitle {
+.login-btn:hover {
+  color: #005d83;
+  cursor: pointer;
+}
+.register-btn:hover {
+  color: #005d83;
+  cursor: pointer;
+}
+/*login dialog*/
+.login-dialog {
   text-align: center;
+  max-width: 430px;
+  font-family: "Lato", 微軟雅黑體, "Microsoft JhengHei", 微軟正黑體, Arial,
+    sans-serif;
+}
+.login-dialog-header {
+  background-image: url("../img/login-header-bg.jpg");
+  height: auto;
+  padding: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+.login-dialog-logo {
+  height: 2rem;
+}
+.login-dialog-body .login-dialog-content title {
   font-weight: bold;
-  margin: 1rem 0;
+  font-size: 28px;
+}
+.phone-number {
+  float: left;
+}
+.email-login {
+  float: right;
+}
+.email-login::after {
+  display: block;
+  content: ;
 }

@@ -45,9 +45,13 @@ export default class Login extends Component {
             <iframe
               id="login-iframe"
               title="Login"
-              src={
-                "https://loginuat.emphasis.com/cas/login?style=popup&service=https%3A%2F%2Fhktest-pks.emphasis.com/eshop-hk/api/user/login/success/event&locale=zh_tw"
-              }
+              src={"http://localhost:3002/login-page"}
+              /*CAS path*/
+              // src={
+              //   "https://loginuat.emphasis.com/cas/login?style=popup&service=https%3A%2F%2Fhktest-pks.emphasis.com/eshop-hk/api/user/login/success/event&locale=zh_tw"
+              // }
+
+              /*加密CAS path*/
               // src={`${CAS_HOST_URL}/cas/login?style=popup&service=${encodeURIComponent(
               //   "https://loginuat.emphasis.com"
               // )}/eshop-hk/api/user/login/success/event${
